@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36_吳晉宇_期中專題</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style01.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+
+     .hide_nav{
+       transform: translateY(-100px);
+     }
+
+     .nav_white{
+       color: white;
+     }
+     .moveleft{
+        transform: translateX(-100px);
+
+     }
+
+     .moveright{
+      transform: translateX(100px);
+
+     }
+
+     .watermove{
+      transition: 2s;
+      
+      transform: scale(1.5);
+     }
+
+     .handmove{
+      transform: translateX(-100px);
+     
+
+     }
+
+     .sundown{
+      transform: translateY(0px);
+     }
+
+      
+    </style>
+   
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+        <a class="navbar-brand" href="#INTRO">
+            <img src="./網站素材/1x/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#Perfume">夕日Sunset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index_2.html">探索商場</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#category">香調分類</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index_4.html">購物車</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+     <section class="section_1 " id="INTRO">
+        <div class="title_wrap  ">
+          <h1 class="animate__animated animate__fadeInUp">"沈浸在落日香氛。"</h1>
+       </div>
+
+         <div class="warp01 animate__animated animate__slideInUp">
+
+           <!-- <div class="cloud_wall">
+             <img src="./網站素材/1x/cloud_wall.png" alt="">
+           </div> -->
+
+           <div class="moutain_left">
+             <img src="./網站素材/1x/山_LEFT.png" alt="">
+           </div>
+           <div class="Sun01 animate__animated animate__slideInUp">
+             <img src="./網站素材/1x/Sun Landingpage 1.png" alt="">
+           </div>
+           <div class="mountain_right">
+             <img src="./網站素材/1x/山_RIGHT.png" alt="">
+           </div>
+
+
+         </div>
+        </div>
+    </section>
+
+    <section class="section_2" id="Perfume">
+    
+      <div class="head_wrap">
+        <img src="./網站素材/1x/SUN_small.png"  class="SUN_small  ">
+        <h2>本月主打</h2>
+        <p><a href="./index_3.html">了解更多>></a></p>
+      </div>
+
+      <div class="perfume_wrap">
+        <img src="./網站素材/1x/Sun_perfume.png" alt="" class="Sun_perfume01">
+        <img src="./網站素材/1x/Perfume_03.png" alt="" class="bottle">
+        
+      </div>
+
+      <div class="wave_warp">
+        <div class="wav_big">
+         <img src="./網站素材/1x/WAVE_02.png" alt="">
+       </div>
+      <div class="wav_small">
+        <img src="./網站素材/1x/WAVE_01.png" alt="" >
+      </div>
+        
+      </div>
+
+      <div class="perfume_shadow_warp">
+        <img src="./網站素材/1x/Perfume_02_reflection.png" alt="" class="bottle_reflection">
+        <img src="./網站素材/1x/Sun_perfume_reflection.png" alt="" class="Sun_reflection">
+
+      </div>
+
+
+      </div>
+
+    </section>
+   <section class="section_3" id="More">
+
+      <div class="More_warp d-flex">
+        <div class="sun03">
+            <img class="perfume_shadow" src="./網站素材/1x/perfume_dark02.png">
+            <img class="hand" src="./網站素材/1x/hand_dark03.png" alt="">
+        </div>
+
+        <div class="content_warp">
+          <h1>尋找專屬氣味</h1>
+          <h5>上百種商品任你挑選，找尋屬於你的氣味。</h5>
+          <p><a href="./index_2.html">進入商場>></a></p>
+      </div>
+      </div>
+        <div class="wave">
+            <img src="./網站素材/1x/wave_2.png" alt="">
+        </div>
+    </section>
+
+    <section class="section_4" id="category">
+
+        <img class="sun04 " src="./網站素材/1x/SUN_Landingpage_4.png" alt="" style="float: right;">
+
+        <div class="container categeory_warp">
+          <div class="row">
+            <div class="box col-lg-3 col-md-3 col-6">
+              <img src="./網站素材/1x/flower.png" alt="">
+              <p><a href="./index_2.html#ITMES">花香調</a></p>
+            </div>
+            <div class="box col-lg-3 col-md-3 col-6">
+              <img src="./網站素材/1x/critus.png" alt="">
+              <p><a href="./index_2.html#ITMES">柑橘調</a></p>
+            </div>
+            <div class="box col-lg-3 col-md-3 col-6">
+              <img src="./網站素材/1x/fruit.png" alt="">
+              <p><a href="./index_2.html#ITMES">果香調</a></p>
+            </div>
+            <div class="box col-lg-3 col-md-3 col-6">
+              <img src="./網站素材/1x/wood.png" alt="">
+              <p><a href="./index_2.html#ITMES">木質調</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="box col-lg-3 col-md-3 col-6">
+              <img src="./網站素材/1x/spice.png" alt="">
+              <p><a href="./index_2.html#ITMES">辛辣調</a></p>
+            </div>
+            <div class="box col-lg-3 col-md-3 col-6">
+              
+              <img src="./網站素材/1x/ocean.png" alt="">
+              <p><a href="./index_2.html#ITMES">海洋調</a></p>
+              
+            </div>
+            <div class="box col-lg-3 col-md-3 col-6">
+              <img src="./網站素材/1x/tea.png" alt="">
+              <p><a href="./index_2.html#ITMES">茶香調</a></p>
+            </div>
+            <div class="box col-lg-3 col-md-3 col-6">
+              <img src="./網站素材/1x/musk.png" alt="">
+              <p><a href="./index_2.html#ITMES">麝香調</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="wrap_04">
+            <img class="mountain_bottom" src="./網站素材/1x/moutain_bottom.png" alt="">
+        </div>
+
+    </section> 
+              
+    <div class="footer">
+        <p>Copy right by James Wu</p>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        
+        
+    <script>
+          
+
+        console.log('windowwidth:',$(window).width());
+
+
+        //  移動到指定範圍navbar出現
+       $(window).mousemove(function(e){
+
+              // console.log('x:',e.screenX+",y:"+e.screenY);
+
+              if(e.screenY < 166){
+                $('.navbar').removeClass('hide_nav');
+              }
+              
+
+        })
+
+
+        
+        
+    
+        // 手機w375效果===============================================
+         let Windowwidth = $(window).width();
+
+          if(Windowwidth <= 375){
+
+            // 定義高度參數
+              let scrollNow = $(this).scrollTop();
+
+            //  定義動畫效果
+            let Fadedown = "animate__animated animate__fadeOutDown"
+            let FadeIn ="animate__animated animate__fadeInUp"
+            let SlideInUp="animate__animated animate__slideInUp"
+            let FadeoutUp ="animate__animated animate__fadeOutUp"
+            let FadeInDown="animate__animated animate__fadeInDown"
+              
+            //  所有滾動效果
+            $(window).scroll(function(event){
+              
+                  console.log('scrolltop:',$(this).scrollTop());
+                  let scrollNow = $(this).scrollTop();
+
+
+
+              // navbar導覽列效果
+
+              let scrollLast = 0
+
+              if(scrollNow  <= 679){
+                }
+              else{
+                  if(scrollLast < scrollNow){
+
+                    $('.navbar').addClass('hide_nav');
+                  }
+                  else{
+                    $('.navbar').removeClass('hide_nav');
+
+                  }
+              }
+              scrollLast = scrollNow;
+
+
+
+            //  nav在特定區域變色
+            if(scrollNow >= 1336  ){
+
+              $('.nav-item a').css('color','white');
+              }
+
+              else{
+              $('.nav-item a').css('color','#5C5757');
+              }
+
+              if(scrollNow >= 2221){
+              $('.nav-item a').css('color','#5C5757');
+
+              }
+
+              // 山左右移動
+              if(scrollNow >= 78){
+               
+                  $('.moutain_left').addClass('moveleft');
+                  $('.mountain_right').addClass('moveright');
+              
+                }
+              else{
+
+                $('.moutain_left').removeClass('moveleft');
+                $('.mountain_right').removeClass('moveright');
+              
+              }
+
+              // 山的過場消失
+            
+              if(scrollNow >= 458){
+                $('.warp01').css('opacity','0')
+                $('.title_wrap').css('opacity','0');
+                $(".head_wrap").css('opacity','1');
+                $(".bottle").css('opacity','1');
+                $(".bottle_reflection").css('opacity','1');
+                
+              }
+              else{
+                $('.warp01').css('opacity','1')
+                $('.title_wrap').css('opacity','1');
+                $(".head_wrap").css('opacity','0');
+                $(".bottle").css('opacity','0');
+                $(".bottle_reflection").css('opacity','0');
+
+              }
+
+            // 太陽與水波紋進入
+            if(scrollNow >= 698){
+                $('.warp01').removeClass(SlideInUp);
+                $('.SUN_small').addClass(Fadedown)
+                $('.Sun_perfume01').css('opacity','1');
+                $('.Sun_reflection').css('opacity','1');
+
+                $(".wav_big img").addClass('watermove').css('opacity','1');
+                $(".wav_small img").addClass('watermove').css('opacity','1');
+                
+              }
+              else{
+                $('.SUN_small').removeClass(Fadedown);
+                $('.SUN_small').addClass(FadeIn);
+                $('.Sun_perfume01').css('opacity','0');
+                $('.Sun_reflection').css('opacity','0');
+
+                $(".wav_big img").removeClass('watermove').css('opacity','0');
+                $(".wav_small img").removeClass('watermove').css('opacity','0');
+                
+
+              }
+              //  Section3太陽出現
+              if(scrollNow >= 929){
+
+              $(".sun03").css('opacity','1');
+
+              }
+              else{
+              $('.sun03').css('opacity','0');
+
+              }
+
+               // Section3剪影與內容出現
+               if(scrollNow >=1187){
+
+                  $(".content_warp").css('opacity','1');
+
+                  $(".perfume_shadow").css('opacity','1');
+
+                  $(".hand").css('opacity','1').addClass('handmove');
+
+                  }
+
+                  else{
+                  $(".content_warp").css('opacity','0');
+                  $(".perfume_shadow").css('opacity','0');
+                  $(".hand").css('opacity','0').removeClass('handmove');
+                
+                
+                }
+
+                if(scrollNow >= 1646){
+
+
+                $('.sun04').addClass("sundown").css('opacity','1');
+
+
+                }
+                else{
+                $('.sun04').removeClass("sundown").css("opacity","0");
+
+                }
+
+
+                if(scrollNow >= 1817){
+
+                $('.categeory_warp').css("opacity","1");
+                }
+
+                else{
+
+                $('.categeory_warp').css("opacity","0");
+
+
+                }
+
+              })
+
+              
+            }
+
+            // 平板w768效果===============================================
+
+
+            if(Windowwidth <= 768){
+
+              $(window).scroll(function(event){
+
+              console.log('scrolltop:',$(this).scrollTop());
+
+              // 定義高度參數
+              let scrollNow = $(this).scrollTop();
+
+              //  定義動畫效果
+              let Fadedown = "animate__animated animate__fadeOutDown"
+              let FadeIn ="animate__animated animate__fadeInUp"
+              let SlideInUp="animate__animated animate__slideInUp"
+              let FadeoutUp ="animate__animated animate__fadeOutUp"
+              let FadeInDown="animate__animated animate__fadeInDown"
+
+
+
+              // navbar導覽列效果
+
+              let scrollLast = 0
+
+              if(scrollNow  <= 734){
+                }
+              else{
+                  if(scrollLast < scrollNow){
+                    $('.navbar').addClass('hide_nav');
+                    
+
+                  }
+                  else{
+                    $('.navbar').removeClass('hide_nav');
+
+                  }
+              }
+              scrollLast = scrollNow;
+
+              //  nav在特定區域變色
+              if(scrollNow >= 1688  ){
+
+              $('.nav-item a').css('color','white');
+              }
+
+              else{
+              $('.nav-item a').css('color','#5C5757');
+              }
+
+              if(scrollNow >= 2490){
+              $('.nav-item a').css('color','#5C5757');
+
+              }
+
+              // 山左右移動
+              if(scrollNow >= 125){
+              
+                  $('.moutain_left').addClass('moveleft');
+                  $('.mountain_right').addClass('moveright');
+
+              }
+              else{
+
+                $('.moutain_left').removeClass('moveleft');
+                $('.mountain_right').removeClass('moveright');
+                
+              }
+
+
+
+              // 山的過場消失
+
+              if(scrollNow >= 447){
+                $('.warp01').css('opacity','0')
+                $('.title_wrap').css('opacity','0');
+                $(".head_wrap").css('opacity','1');
+                $(".bottle").css('opacity','1');
+                $(".bottle_reflection").css('opacity','1');
+                
+              }
+              else{
+                $('.warp01').css('opacity','1')
+                $('.title_wrap').css('opacity','1');
+                $(".head_wrap").css('opacity','0');
+                $(".bottle").css('opacity','0');
+                $(".bottle_reflection").css('opacity','0');
+
+              }
+              // 太陽與水波紋進入
+              if(scrollNow >= 590){
+                $('.warp01').removeClass(SlideInUp);
+                $('.SUN_small').addClass(Fadedown)
+                $('.Sun_perfume01').css('opacity','1');
+                $('.Sun_reflection').css('opacity','1');
+
+                $(".wav_big img").addClass('watermove').css('opacity','1');
+                $(".wav_small img").addClass('watermove').css('opacity','1');
+                
+              }
+              else{
+                $('.SUN_small').removeClass(Fadedown);
+                $('.SUN_small').addClass(FadeIn);
+                $('.Sun_perfume01').css('opacity','0');
+                $('.Sun_reflection').css('opacity','0');
+
+                $(".wav_big img").removeClass('watermove').css('opacity','0');
+                $(".wav_small img").removeClass('watermove').css('opacity','0');
+                
+
+              }
+
+              //  Section3太陽出現
+              if(scrollNow >= 768){
+
+                $(".sun03").css('opacity','1');
+                
+              }
+              else{
+                $('.sun03').css('opacity','0');
+
+              }
+
+              // Section3剪影與內容出現
+              if(scrollNow >=1044){
+
+                $(".content_warp").css('opacity','1');
+
+                $(".perfume_shadow").css('opacity','1');
+                
+                $(".hand").css('opacity','1').addClass('handmove');
+                
+              }
+
+              else{
+                $(".content_warp").css('opacity','0');
+                $(".perfume_shadow").css('opacity','0');
+                $(".hand").css('opacity','0').removeClass('handmove');
+
+              }
+
+              // section4效果
+              if(scrollNow >= 1433){
+
+
+                  $('.sun04').addClass("sundown").css('opacity','1');
+
+
+                  }
+                  else{
+                  $('.sun04').removeClass("sundown").css("opacity","0");
+
+                  }
+
+
+              if(scrollNow >= 1617){
+
+                  $('.categeory_warp').css("opacity","1");
+              }
+
+              else{
+
+                  $('.categeory_warp').css("opacity","0");
+
+
+              }
+            })
+          }
+           
+
+
+
+
+            // 網頁效果＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+            else if (Windowwidth >= 768){ 
+
+              //  移動到指定範圍navbar出現
+            $(window).mousemove(function(e){
+
+              // console.log('x:',e.screenX+",y:"+e.screenY);
+
+              if(e.screenY < 166){
+                $('.navbar').removeClass('hide_nav');
+              }
+              
+
+            })
+              
+
+              $(window).scroll(function(event){
+
+              console.log('scrolltop:',$(this).scrollTop());
+
+              // 定義高度參數
+              let scrollNow = $(this).scrollTop();
+
+              //  定義動畫效果
+              let Fadedown = "animate__animated animate__fadeOutDown"
+              let FadeIn ="animate__animated animate__fadeInUp"
+              let SlideInUp="animate__animated animate__slideInUp"
+              let FadeoutUp ="animate__animated animate__fadeOutUp"
+              let FadeInDown="animate__animated animate__fadeInDown"
+
+
+
+              // navbar導覽列效果
+
+              let scrollLast = 0
+
+              if(scrollNow  <= 734){
+                }
+              else{
+                  if(scrollLast < scrollNow){
+                    $('.navbar').addClass('hide_nav');
+
+                  }
+                  else{
+                    $('.navbar').removeClass('hide_nav');
+
+                  }
+              }
+              scrollLast = scrollNow;
+
+            //  nav在特定區域變色
+            if(scrollNow >= 1688  ){
+
+              $('.nav-item a').css('color','white');
+              }
+
+              else{
+              $('.nav-item a').css('color','#5C5757');
+              }
+
+              if(scrollNow >= 2490){
+              $('.nav-item a').css('color','#5C5757');
+
+              }
+
+              // 山左右移動
+              if(scrollNow >= 125){
+               
+                  $('.moutain_left').addClass('moveleft');
+                  $('.mountain_right').addClass('moveright');
+              
+              }
+              else{
+
+                $('.moutain_left').removeClass('moveleft');
+                $('.mountain_right').removeClass('moveright');
+                
+              }
+
+
+
+               // 山的過場消失
+            
+              if(scrollNow >= 474){
+                $('.warp01').css('opacity','0')
+                $('.title_wrap').css('opacity','0');
+                $(".head_wrap").css('opacity','1');
+                $(".bottle").css('opacity','1');
+                $(".bottle_reflection").css('opacity','1');
+                
+              }
+              else{
+                $('.warp01').css('opacity','1')
+                $('.title_wrap').css('opacity','1');
+                $(".head_wrap").css('opacity','0');
+                $(".bottle").css('opacity','0');
+                $(".bottle_reflection").css('opacity','0');
+
+              }
+              // 太陽與水波紋進入
+              if(scrollNow >= 744){
+                $('.warp01').removeClass(SlideInUp);
+                $('.SUN_small').addClass(Fadedown)
+                $('.Sun_perfume01').css('opacity','1');
+                $('.Sun_reflection').css('opacity','1');
+
+                $(".wav_big img").addClass('watermove').css('opacity','1');
+                $(".wav_small img").addClass('watermove').css('opacity','1');
+                
+              }
+              else{
+                $('.SUN_small').removeClass(Fadedown);
+                $('.SUN_small').addClass(FadeIn);
+                $('.Sun_perfume01').css('opacity','0');
+                $('.Sun_reflection').css('opacity','0');
+
+                $(".wav_big img").removeClass('watermove').css('opacity','0');
+                $(".wav_small img").removeClass('watermove').css('opacity','0');
+                
+
+              }
+
+              //  Section3太陽出現
+              if(scrollNow >= 1065){
+
+                $(".sun03").css('opacity','1');
+                
+              }
+              else{
+                $('.sun03').css('opacity','0');
+
+              }
+
+              // Section3剪影與內容出現
+              if(scrollNow >=1454){
+
+                $(".content_warp").css('opacity','1');
+
+                $(".perfume_shadow").css('opacity','1');
+                
+                $(".hand").css('opacity','1').addClass('handmove');
+                
+              }
+
+              else{
+                $(".content_warp").css('opacity','0');
+                $(".perfume_shadow").css('opacity','0');
+                $(".hand").css('opacity','0').removeClass('handmove');
+              
+              }
+
+               // section4效果
+               if(scrollNow >= 1835){
+
+
+                  $('.sun04').addClass("sundown").css('opacity','1');
+
+
+                  }
+                  else{
+                  $('.sun04').removeClass("sundown").css("opacity","0");
+
+                  }
+          
+
+              if(scrollNow >= 2023){
+
+                  $('.categeory_warp').css("opacity","1");
+              }
+
+              else{
+
+                  $('.categeory_warp').css("opacity","0");
+
+
+              }
+            })
+
+             
+        }
+
+          
+    </script>
+</body>
+</html>

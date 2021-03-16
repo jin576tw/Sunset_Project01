@@ -1,0 +1,441 @@
+*{
+   /* outline: solid 1px; */
+} 
+
+body,html{
+   
+   font-family: '微軟正黑體'; 
+   margin: 0;
+   padding: 0;
+   
+   
+}
+
+
+.navbar-brand img{
+    width: 100px;
+ }
+ .navbar{
+    font-family: '華康新特明體','Crimson Text';
+    margin: 0;
+    background-color: transparent;
+ }
+ 
+ .nav-item a{
+    
+    padding: 0 10px;
+ }
+
+ .nav-item a:hover{
+     
+    color: #D83593;
+}
+ 
+.FINAL{
+    /* background-image: url("./網站素材/1x/Sun\ right.png");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position:right; */
+
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 195px; 
+    /* overflow: hidden; */
+}
+
+.Sun_right{
+
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100px);
+    animation: sunRight 0.5s linear;
+}
+
+.Sun_right img{
+    width: 100%;
+}
+
+
+@keyframes sunRight {
+    0%{
+        opacity: 0.8;
+        transform: translateX(150px);
+  
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+ .pay_check_warp{
+     z-index: 6;
+    color:#158AB4;
+    /* position: relative; */
+    width: 350px;
+    /* height: 420px; */
+    top: 180px;
+    left: 150px;
+ }
+
+ .pay_check_warp h1{
+     color: #012E3E;
+     font-family: '華康新特明體';
+ }
+
+ .pay_check_warp h5{
+    color:#158AB4;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 10px;
+ }
+
+ #payment_method{
+     margin-top: 20px;
+    color:#158AB4;
+    border: solid 1px #158AB4;
+    width: 350px;
+    height: 30px;
+    border-radius: 3px;
+ }
+
+ .card_holder{
+     margin-top: 20px;
+ }
+
+ .card_holder input{
+    color:#158AB4;
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    border: solid 1px #158AB4;
+ }
+
+
+ .creditcard_number{
+     margin-top: 20px;
+ }
+ .creditcard_number input{
+    border: solid 1px #158AB4;
+    color:#158AB4;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+
+ }
+
+ .cvv{
+     float: right;
+ }
+
+.expire{
+    margin-top: 20px;
+}
+ #number_year{
+    border: solid 1px #158AB4;
+    color:#158AB4;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    
+ }
+
+ #number_mounth{
+    border: solid 1px #158AB4;
+    color:#158AB4;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    margin-left: 10px;
+ }
+
+
+ .bottom_btn_warp{
+     margin-top: 60px;
+ }
+
+
+
+.btn{
+    float: right;
+    margin-left: 15px;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.auto_btn{
+    background-color: #BDC9CE;
+    transition: 0.8s;
+}
+
+.auto_btn:hover{
+    background-color:#D83593;
+}
+
+.auto_btn p {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.auto_btn  a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+.buy_btn{
+    background-color:#BDC9CE;
+    transition: 0.8s;
+}
+
+.buy_btn:hover{
+    background-color:#D83593;
+}
+
+.buy_btn p {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.buy_btn  a{
+    text-decoration: none;
+    color:white;
+    
+}
+.backward a{  
+    position: relative;
+    text-decoration: none;
+    top: 10px;
+    color:#F4BD94;
+    font-size: 14px;
+ }
+
+
+
+ .cart_warp{
+   
+    z-index: 6;
+  
+    margin-left: 200px;
+   
+ }
+
+ .cart_warp h1{
+    font-family: '華康新特明體';
+    color:#FFE6D3 ;
+    text-align: right;
+ }
+
+ .cart_list{
+     margin-top: 25px;
+     width: 400px;
+     height: 300px;
+     border-radius: 10px;
+     border:solid #FFE6D3 1px;
+ }
+
+
+ .item{
+     justify-content: space-between;
+     align-items: center;
+     height: 150px;
+     opacity: 0.6;
+ }
+
+ .item01{
+    border-bottom: solid #FFE6D3 1px;
+ }
+
+
+
+ .item input{
+     margin-left: 10px;
+ }
+
+
+ .item_pic{
+    width: 100px;
+    height: 100px;
+    background-image: url("./網站素材/1x/Perfume.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
+
+ .item_intro{
+     margin-top: 20px;
+ }
+ .item_intro h5 ,p{
+     color: white;
+
+ }
+ .item form{
+     margin-right: 5px;
+ }
+ .qty {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 0;
+   
+  }
+  
+  
+  input.qtyplus {
+    color:#FFE6D3;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: #1682AA;
+  }
+  
+  input.qtyminus {
+    color:#FFE6D3;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: #1682AA;
+  }
+
+  #tottal_money{
+      
+      margin-top: 10px;
+      /* border-bottom: solid white 1px ; */
+  }
+
+
+  @media screen and (min-width:375px) and (max-width:768px){ 
+
+    .navbar{
+        max-width: 760px;
+    }
+
+
+    .FINAL{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+   
+
+    .Sun_right{
+        transform: translateX(100px);
+        margin-right: 50px;
+        width: 800px;
+
+  
+    }
+    .Sun_Left img{
+      width: 100%;
+
+    }
+
+    .cart_warp{
+        margin-top: -80px;
+        margin-left: 0;
+    }
+
+    .pay_check_warp{
+        margin-top: 30px;
+
+    }
+    .bottom_btn_warp{
+        margin-top: 20px;
+
+    }
+}
+
+  @media screen and (max-width:375px){
+
+      .navbar{
+          max-width: 375px;
+      }
+
+       .Sun_right{
+         position: absolute;
+         transform: rotate(270deg);
+         max-width: 320px;
+         left: 0;
+
+          animation: none;
+        
+       }
+
+       .Sun_right img{
+           width: 100%;
+       }
+       .FINAL {
+     
+           flex-direction: column-reverse;
+       }
+      
+       .cart_warp{
+           margin-top: -80px;
+           margin-left: 0;
+       }
+
+       .cart_warp h1{
+           position: relative;
+           right: 230px;
+       }  
+
+       #tottal_money{
+           position: relative;
+           left: 0px;
+           font-size: 30px;
+           color:#D83593;
+       }
+
+       .cart_list{
+           background-color: #fff;
+           width: 350px;
+       }
+
+       /* .pay_check_warp{
+           margin-top: 50px;
+       } */
+
+       
+       .item_intro h5 ,p{
+           color: #F4BD94;
+       }
+        .qty {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border: 0;
+           
+          }
+          
+          
+          input.qtyplus {
+            position: relative;
+            top: 5px;
+            text-align: center;
+            color:#FFE6D3;
+            width: 20px;
+            height: 20px;
+            border: 0;
+            background: #1682AA;
+          }
+          
+          input.qtyminus {
+            position: relative;
+            top: 5px;
+            color:#FFE6D3;
+            width: 20px;
+            height: 20px;
+            border: 0;
+            background: #1682AA;
+          }
+
+  }
+
+
+  
+
+ 
+

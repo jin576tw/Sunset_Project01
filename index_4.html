@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36_吳晉宇_期中專題_購物車/結帳</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style04.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./網站素材/1x/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#Perfume">夕日Sunset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index_2.html">探索商場</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index_2.html#ITMES">香調分類</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index_4.html">購物車</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+
+     <section class="FINAL d-flex">
+        <div class="Sun_right">
+          <img src="./網站素材/1x/Sun right.png" alt="">
+        </div>
+        
+        <div class="pay_check_warp animate__animated animate__fadeIn">
+          <h1 >確認購買</h1>
+
+          <select id="payment_method">
+            <option>請選擇結帳方式</option>
+            <option value="1">信用卡</option>
+            <option>超商付款</option>
+            <option>ＡＴＭ轉帳</option>
+          </select>
+
+          <div class="card_holder">
+              <h5>持卡人姓名</h5>
+              <input id="Username" type="text">
+          </div>
+
+          <div class="creditcard_number">
+            <div class="cvv">
+                <h5>CVV</h5>
+                <input id="cvv" type="text">
+              </div>
+
+              <h5>信用卡號碼</h5>
+              <div class="creditcard_number_wrap">
+                <input id="num01" type="text">
+                <input id="num02" type="text">
+                <input id="num03" type="text">
+                <input id="num04" type="text">
+              </div>
+          </div>
+
+          <div class="expire">
+            <h5>有效期限</h5>
+            <div class="time_warp">
+                <select id="number_year">
+                    <option>年</option>
+                    <option>１</option>
+                    <option>２</option>
+                    <option>３</option>
+                    <option>４</option>
+                    <option>５</option>
+                    <option>６</option>
+                    <option>６</option>
+                    <option>８</option>
+                    <option>９</option>
+                    <option>10</option>
+                    <option value="11">11</option>
+                    <option>12</option>
+                </select>年
+             
+                <select id="number_mounth">
+                    <option>月</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="4">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                </select>月
+            </div>
+            
+          </div>
+
+         
+          <div class="bottom_btn_warp ">
+            <div class="btn buy_btn">
+                <p><a href="#">立刻結帳</a></p>
+            </div>
+            <div class="btn auto_btn">
+                <p id="Auto_btn"><a href="#">自動填入</a></p>
+            </div>   
+         </div>
+          <p class="backward"><a href="./index_3.html">←返回商品</a></p>
+
+        </div>
+
+
+
+
+        <div class="cart_warp animate__animated animate__fadeIn">
+            <h1>購物車</h1>
+            <div class="cart_list">
+
+                <div class="item item01 d-flex">
+                    <input type="checkbox" checked class="checkbox">
+                    <div class="item_pic"></div>
+                    <div class="item_intro">
+                        <h5>夕日Sunset</h5>
+                        <p>NT$999</p>
+                    </div>
+
+                    <form id='myform' method='POST' action='#'>
+                        <label for=" "></label>
+                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                        <input type='text' name='quantity' value='1' class='qty' />
+                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                    </form>
+
+                </div>
+                <div class="item item02 d-flex">
+                    <input type="checkbox" name="" class="checkbox" >
+                    <div class="item_pic"></div>
+                    <div class="item_intro">
+                        <h5>夕日Sunset</h5>
+                        <p>NT$999</p>
+                    </div>
+
+                    <form id='myform' method='POST' action='#'>
+                        <label for=" "></label>
+                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                        <input type='text' name='quantity' value='0' class='qty' />
+                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                    </form>
+                </div>
+                
+            </div>
+            <h1 id="tottal_money">總計 NT$999</h1>
+   
+        </div>
+     </section>
+
+     
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+
+
+        // 計算器
+        $(function() {
+            // This button will increment the value
+            $('.qtyplus').click(function(e) {
+                
+                e.preventDefault();
+             
+                fieldName = $(this).attr('field');
+                
+
+                $(this).prev().val(parseInt($(this).prev().val())+1)
+                console.log('value', $(this).prev().val())
+
+                updateTotalMoney();
+
+            });
+            // This button will decrement the value till 0
+            $(".qtyminus").click(function(e) {
+               
+                e.preventDefault();
+
+                fieldName = $(this).attr('field');
+
+                $(this).next().val(parseInt($(this).next().val())-1)
+                
+                console.log('minus', $(this).next().val())
+
+
+                updateTotalMoney();
+                
+            
+            });
+
+          })
+           
+            function updateTotalMoney(){
+                let total = 0;
+                $('.qty').each(function(){
+                    let price = $(this).parent().prev().find('p')[0].innerHTML.replace('NT$','');
+                    total = total + parseInt($(this).val()) *price;
+                })
+
+   
+                $('#tottal_money').text('總計 NT$' + total)
+            }
+
+            updateTotalMoney();
+
+        $('#Auto_btn').click(function(event){
+          event.preventDefault();
+          $('#payment_method').val('1');
+          $('#Username').val('James');
+          $('#num01').val('4444');
+          $('#num02').val('6666');
+          $('#num03').val('7777');
+          $('#num04').val('8888');
+          $('#cvv').val('199');
+          $('#number_year').val('11')
+          $('#number_mounth').val('4')
+        
+      })
+      
+      $('.checkbox').closest(".item01").css('opacity','1');
+
+      $(".checkbox").click(function(){
+
+
+        // 反白效果
+        if($(this).is(":checked")){
+          $(this).closest(".item").css('opacity','1');
+          console.log($(this).nextAll().find('.qty').val());
+          $(this).nextAll().find('.qty').val("1")
+          
+          
+        }else{
+          $(this).closest(".item").css('opacity','0.6');
+          $(this).nextAll().find('.qty').val("0")
+          
+        };
+      
+      })
+    </script>
+</body>
+</html>

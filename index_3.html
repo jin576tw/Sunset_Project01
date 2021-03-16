@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36_吳晉宇_期中專題_商品頁</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style03.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+        <a class="navbar-brand" href="index.html#INTRO">
+            <img src="./網站素材/1x/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a href="./index.html#Perfume">夕日Sunset</a>
+            </li>
+            <li class="nav-item">
+              <a  href="./index_2.html">探索商場</a>
+            </li>
+            <li class="nav-item">
+              <a  href="./index_2.html#ITMES">香調分類</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./index_4.html">購物車</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+      <section class="ITEM_1234 d-flex">
+          <div class="Sun_Left ">
+            <img src="./網站素材/1x/Sun_Left.png" alt="">
+          </div>
+
+          <div class="pic_warp animate__animated animate__fadeIn">
+            <div class="item1234_pic">
+              <img src="./網站素材/1x/Perfume.png" alt="">
+            </div>
+            <div class="warp_small d-flex">
+                <div class="item1234_pic_small item_red">
+                  <img src="./網站素材/1x/Perfume.png" alt="">
+                </div>
+                <div class="item1234_pic_small item_blue">
+                  <img src="./網站素材/1x/perfume_blue.png" alt="">
+                </div>
+                <div class="item1234_pic_small item_green">
+                  <img src="./網站素材/1x/perfume_green.png" alt="">
+                </div>
+            </div>
+          </div>
+
+          <div class="content_warp animate__animated animate__fadeIn">
+              <h1 id="item_name">夕日Sunset</h1>
+
+           <div class="tag_warp d-flex">
+               <div class="tag tag_1">
+                 <p>果香調</p>
+               </div>
+               <div class="tag tag_2">
+                <p>產地：台灣</p>
+               </div>
+               <div class="tag tag_3">
+                <p>中性香</p>
+               </div>
+           </div>
+
+              <h5 id="content">沈浸在落日的香氛，環繞在山與海的氛圍。</h5>
+
+           <div class="middle_wrap d-flex ">
+                <div class="price_wrap">
+                <h4>價格</h4>
+                <h4>NT$<span id="price">999</span></h4>
+                </div>
+            
+                <div class="social_btn_wrap d-flex">
+                    <div class="box FB"></div>
+                    <div class="box IG"></div>
+                    <div class="box LINE"></div>
+                </div>
+
+            </div>
+
+            <div class="pay_btn_wrap ">
+                <div class="btn buy_btn">
+                <p><a href="./index_4.html">立刻購買</a></p>
+                </div>
+                <div class="btn add_cart">
+                <p><a href="./index_4.html">加入購物車</a></p>
+                </div>
+                
+            </div>
+            
+          </div>
+          </div>
+          
+     
+      </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+        $('.warp_small img').click(function(){
+
+            let imgSrc = $(this).attr('src');
+          $('.item1234_pic img').attr('src', imgSrc);
+
+          })
+    </script>
+</body>
+</html>

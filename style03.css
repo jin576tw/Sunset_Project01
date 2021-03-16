@@ -1,0 +1,376 @@
+*{
+    /* outline: 1px solid; */
+} 
+body,html{
+
+   font-family: '微軟正黑體'; 
+   margin: 0;
+   padding: 0;
+
+   
+   
+   
+}
+
+
+.navbar-brand img{
+   width: 100px;
+}
+.navbar{
+   font-family: '華康新特明體','Crimson Text';
+   margin: 0;
+   background-color: transparent;
+}
+
+.nav-item a{
+   color: white;
+   padding: 0 10px;
+   text-decoration: none;
+   transition: 0.8s;
+}
+
+.nav-item a:hover{
+    color: #D83593;
+}
+
+
+
+
+.Sun_Left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    animation: sunLeft 0.5s linear;
+    transform: translateX(-100px);
+   
+
+  
+}
+
+
+@keyframes sunLeft {
+    0%{
+        opacity: 0.8;
+        transform: translateX(-150px);
+  
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateX(-100px);
+    }
+}
+.Sun_Left img{
+    width: 100%;
+}
+
+.ITEM_1234{
+    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 150px; 
+
+} 
+
+
+
+.pic_warp{
+    z-index: 6;
+    
+   
+  
+}
+
+
+.item1234_pic{
+    width: 400px;  
+    height: 400px;
+    transition: 2s;
+ 
+}
+
+.item1234_pic img{
+    width: 100%;
+}
+
+.warp_small{
+    margin-top: 60px;
+    /* margin-left: 0px; */
+    justify-content: space-around;
+}
+
+.item1234_pic_small{ 
+    
+    width: 100px;
+    height: 100px;
+    background-color:#FFE6D3;
+    border-radius: 100%;
+    overflow: hidden;
+   
+}
+
+.item_red img{
+    width: 100%;
+ 
+}
+
+.item_blue img{
+    width: 100%;
+ 
+
+}
+.item_green img{
+    width: 100%;
+
+
+} 
+
+.content_warp{
+    z-index: 6;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+#item_name{
+    font-family: '華康新特明體';
+    color:#1682AA;
+}
+#content{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 380px;
+}
+
+.tag_warp {
+    margin-top: 10px;
+   
+}
+.tag{
+    margin: 0px 10px 0 0px;
+    border-radius: 10px;
+    
+    width: 120px;
+    height: 30px;
+    
+}
+
+.tag p{
+    margin-top: 3px;
+    color:white;
+    text-align: center;
+}
+
+.tag_1{
+    background-color:#1D9DCC;
+}
+.tag_2{
+    background-color:#F4BD94;
+}
+.tag_3{
+    background-color:#e98ec1;
+}
+
+.middle_wrap{
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.price_wrap{
+    color: #1682AA;
+}
+#price{
+    font-size: 40px;
+}
+
+.box{
+    
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 100%;
+    margin: 18px 5px 0 5px;
+}
+
+.FB{
+    background-image: url(./網站素材/flipCoff.png);
+    background-size: cover;
+}
+
+.IG{
+    background-image: url(./網站素材/Instagram-logo.png);
+    background-size:cover;
+}
+.LINE{
+    background-image: url(./網站素材/flipDoff.png);
+    background-size: cover;
+}
+
+
+.btn{
+    border-radius: 10px;
+    margin: 60px 0px 0px 20px;
+    width: 150px;
+    height: 50px;
+    float: right;
+}
+
+.pay_btn_wrap{
+    margin-top: 40px;
+}
+.add_cart{
+    background-color: #BDC9CE;
+    transition: 0.8s;
+}
+
+.add_cart:hover{
+    background-color: #D83593;
+}
+
+.add_cart p {
+    margin-top: 6px;
+    text-align: center;
+}
+.add_cart a{
+    text-decoration: none;
+    color:white;
+}
+
+.buy_btn{
+    
+    background-color:#BDC9CE;
+}
+
+.buy_btn p {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.buy_btn:hover{
+    background-color: #D83593;
+}
+
+.buy_btn  a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+
+
+    
+
+@media screen and (max-width:375px) {
+      
+
+    .navbar{
+      max-width: 375px;
+    
+    }
+
+    .Sun_Left{
+     transform: rotate(90deg);
+     width: 330px;
+     animation: none;
+    
+
+
+     
+    }
+    .Sun_Left img{
+      width: 100%;
+     
+
+    }
+
+
+    .pic_warp{
+        /* margin-top: 100px; */
+    }
+  
+     .ITEM_1234{
+    
+        max-width: 375px;
+        flex-direction: column;
+     }
+    
+    
+     .warp_small{
+   
+         margin: 30px auto;
+
+     }
+     .content_warp{
+         margin: 0 auto;
+     }
+     .content_warp h1{
+
+        width: 300px;
+
+     }
+
+     .tag_warp{
+       margin: 0 auto;
+       width: 300px;
+
+     }
+
+
+
+     #content{
+        margin: 20px auto;
+        width: 300px;
+
+         
+     }
+     .middle_wrap{
+         margin: 0 auto;
+         width: 300px;
+         flex-direction: column;
+     }
+     .pay_btn_wrap{
+        /* margin-top: 20px; */
+        margin-left: 100px;
+        width: 200px;
+     }
+
+     .buy_btn{
+        background-color: #D83593;
+      }
+     .add_cart{
+         position: relative;
+         bottom: 50px;
+     }
+     
+ }
+
+ @media screen and (min-width:375px) and (max-width:768px){ 
+
+    .Sun_Left img{
+        
+      width: 100%;
+     
+    }
+
+    .ITEM_1234{
+        /* margin-left: 400px; */
+        margin-top: -70px;
+        justify-content: center;
+        flex-direction: column;
+        
+   
+     }
+
+     .middle_wrap{
+         margin-top: 10px;
+     }
+
+     .pay_btn_wrap{
+         margin-top: -35px;
+     }
+
+    
+}

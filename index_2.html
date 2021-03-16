@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36_吳晉宇_期中專題_主頁面</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style02.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+        <a class="navbar-brand" href="index.html#INTRO">
+            <img src="./網站素材/1x/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a href="./index.html#Perfume">夕日Sunset</a>
+            </li>
+            <li class="nav-item">
+              <a  href="#More">探索商場</a>
+            </li>
+            <li class="nav-item">
+              <a  href="#ITMES">香調分類</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="./index_4.html">購物車</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+    <section class="section01">
+       <div class="container">
+        <div class="carousel">
+            <ul class="list-unstyled d-flex img-wrap ">
+              <li><img src="./網站素材/1x/corrosole01.png" alt=""></li>
+              <li><img src="./網站素材/1x/corrosole02.png" alt=""></li>
+              <li><img src="./網站素材/1x/corrosole03.png" alt=""></li>
+              
+              
+            </ul>
+            <ul class="slider-dots ">
+              <li></li>
+              <li></li>
+              <li></li>
+              
+            </ul>
+          </div>
+        </div>
+        
+
+    </section>
+
+    <section class="ITEMS" id="ITMES">
+        <div class="category">
+            <div class="container">
+                <div class="row">
+                    <div class="category_warp col-lg-12 col-sm-12 ">
+                        <div class="category_item col-lg-3 col-sm-3">
+                            <h5>價格</h5>
+                        </div>
+                        <div class="category_item col-lg-3 col-sm-3">
+                            <h5>香調類別</h5>
+                        </div>
+                        <div class="category_item col-lg-3 col-sm-3">
+                            <h5>品牌</h5>
+                        </div>
+                        <div class="category_item col-lg-3 col-sm-3">
+                            <h5>男/女香氣</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container item_wrap">
+            <div class="row">
+                    <div class="item col-lg-3 col-md-6 col-sm-6">
+                        <div class="item_pic">
+                          <img src="./網站素材/1x/Perfume.png" alt="">
+                        </div>
+                        <h3><a href="./index_3.html">夕日Sunset</a></h3>
+                        <p>沈浸在落日的香氛，環繞在山與海的氛圍。</p>
+                        <p><span>NT$999</span></p>
+                    </div>
+                   
+                    
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <img src="./網站素材/1x/moutain_bottom.png" alt="">
+        <div class="footer">
+            <p>Copy right by James Wu</p>
+        </div>
+    </section>
+
+ 
+   
+   
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    
+    
+    <script>
+      let scrollLast = 0
+
+        $(window).scroll(function(){
+        console.log('scrolltop:',$(this).scrollTop());
+
+
+        let scrollNow = $(this).scrollTop();
+
+        if(scrollNow  <= 820){
+        }
+        else{
+            if(scrollLast < scrollNow){
+                $('.navbar').addClass('hide_nav');
+
+            }
+            else{
+            $('.navbar').removeClass('hide_nav');
+
+            }
+        }
+        scrollLast = scrollNow;
+
+       })
+
+
+      let page = 0;
+      // 設定點點初始值，Page=0
+      $('.slider-dots li').eq(page).css('background-color','#1D9DCC').siblings().css('background-color','#F4BD94');
+
+      $('.slider-dots li').hover(function(){
+
+        page = $(this).index();
+
+        // $(this) 代名詞 = 被hover 的 li 
+        console.log("hi");
+        // .index()叫出索引值順序
+        console.log($(this).index());
+
+        $(this).css('background-color','#1D9DCC').siblings().css('background-color','#F4BD94');
+        // 根據索引值順序的值運算移動
+        $('.img-wrap').css('left',$(this).index()*-1200+'px');
+      })
+      
+      // js es6 的 Funtion 寫法,俗稱箭頭函式
+      setInterval(() => {
+         page += 1;
+
+         if(page > 2){
+           page = 0;
+         };
+          
+         $('.img-wrap').css('left',page*-1200+'px');
+         console.log('page =',page);
+
+         $('.slider-dots li').eq(page).css('background-color','#1D9DCC').siblings().css('background-color','#F4BD94');
+      } ,3000);
+
+
+
+
+    //   商品頁
+
+      let productArray = [
+      
+      {pic:'./網站素材/Perfume_pic/perfume01.jpg',name:'Clinique Happy 倩碧快樂男性淡香水', intro:'透露著清新的木質香，及生氣盎然的果香。', price:'1,099'},
+      {pic:'./網站素材/Perfume_pic/perfume02.jpg',name:'LOEWE SOLO 羅威先生男性淡香水', intro:'將西方柑橘與東方麝香完美融合，詮釋特殊獨特原創及帶點低調的男人味。', price:'1,976'},
+      {pic:'./網站素材/Perfume_pic/perfume03.jpg',name:'YSL LIBRE Intense 女性淡香精', intro:'讓人有一定距離感，接著會滿滿散發岀比較柔和的花香，適合職場女性或酷酷的女孩', price:'3,050'},
+      {pic:'./網站素材/Perfume_pic/perfume04.jpg',name:'Jean Patou Joy 喜悅女性淡香精 TESTER', intro:'像醇酒一樣芳香，百花綻放，非常愉悅的感覺，香味雖然清新但十分有份量。', price:'2,950'},
+      {pic:'./網站素材/Perfume_pic/perfume05.jpg',name:'Workshop Tea Rose 茶玫瑰女性淡香水', intro:'自然的香味到後面會帶點肥皂味並且粉粉的氣息，適合給媽媽用的玫瑰香。', price:'2,480'},
+      {pic:'./網站素材/Perfume_pic/perfume06.jpg',name:'Giorgio Armani Light Di Gioia', intro:'像茉莉花與梔子花的浪漫二重奏，最後再揉合雪松精華木質香的溫暖。', price:'2,590'},
+      {pic:'./網站素材/Perfume_pic/perfume07.jpg',name:'Armaf Club De Nuit Milestone 中性淡香精', intro:'柑橘調 、 海洋清新調，鳶尾、柑橘、檸檬、佛手柑', price:'1,850'},
+      {pic:'./網站素材/Perfume_pic/perfume08.jpg',name:'Lanvin 浪凡花漾公主女性淡香水迷你瓶', intro:'活潑清爽的味道，前調是香甜的柑橘、西瓜，甜美又清純，留香時間還不錯。', price:'780'},
+      {pic:'./網站素材/Perfume_pic/perfume09.jpg',name:'Clean Ultimate Beach Day 海灘日女性淡香水', intro:'簡約透明的瓶身，味道也是極為自然，不搶眼不過激，宛如天然的體香一樣。', price:'1,800'},
+      {pic:'./網站素材/Perfume_pic/perfume10.jpg',name:'Burberry Brit 風格女性淡香水', intro:'微酸的檸檬香與微甜的杏仁香替這支香水開啟了序幕，讓整體更加優雅氣質。', price:'1,150'},
+      {pic:'./網站素材/Perfume_pic/perfume11.jpg',name:'CHANEL COCO 女性淡香精版本', intro:'調和著優雅玫瑰花苞與義大利茉莉的花香主體香味，呈現著的是更輕盈的性感氣質。', price:'3,750'},
+      {pic:'./網站素材/Perfume_pic/perfume12.jpg',name:'Salvatore Ferragamo Acqua Essenziale Blu 湛藍之水男性淡香水', intro:'有一種微尖青年男生銳進氣息，最後轉化為沈穩男人安寧後味。', price:'1,580'},
+      {pic:'./網站素材/Perfume_pic/perfume13.jpg',name:'YSL La Nuit De LHomme Eau Electrique 天之驕子搖滾男性淡香水', intro:'天竺葵、蘋果、東加香豆及香草為主香，是款好聞的香水。', price:'2,550'},
+      
+      {pic:'./網站素材/Perfume_pic/perfume14.jpg',name:'Versace Pour Homme Dylan Blue 狄倫正藍男性淡香水迷你瓶', intro:'參雜些許的橙香，讓味道多了些許年輕感，後味的麝香蠻持久的。', price:'2,20'},
+
+      
+      {pic:'./網站素材/Perfume_pic/perfume15.jpg',name:'Boss Bottled Infinite ', intro:'香氛以無比清新及明亮的柑橘、蘋果氣息為此趟逃離喧囂之旅做為開端。', price:'1,590'},
+    
+     ]
+
+
+      
+      for(let i = 0; i < 15; i++){
+        let ITEMS = `<div class="item col-lg-3 col-md-6 col-sm-6">
+                        <div class="item_pic">
+                            <img src="${productArray[i].pic}" alt="">
+                        </div>
+                        <h3>${productArray[i].name}</h3>
+                        <p>${productArray[i].intro}</p>
+                        <p><span>NT$${productArray[i].price}</span></p> 
+                    </div>`;
+
+                
+        $('.item_wrap .row').append(ITEMS);
+
+  }
+
+   
+
+
+    //   for(let i = 0; i < 12; i++){
+    //       let html = `<div class="item col-lg-3 col-md-6 col-sm-6">
+    //                     <div class="item_pic"><img src=${img}></div>
+    //                     <h3><a href="./index_3.html">${productArray[i].name }</a></h3>
+    //                     <p>${productArray[i].des }</p>
+    //                     <p> <span>NT$${productArray[i].price }</span></p>
+    //                 </div>`;
+    //             $('.item_wrap .row').append(html);
+
+    //   }
+
+    $(window).scroll(function(event){
+
+        console.log('scrolltop:',$(this).scrollTop());
+
+
+        let scrollNow = $(this).scrollTop();
+
+        if(scrollNow>676){
+
+          $('.nav-item a').css('color','#606060');
+        }
+        else{
+            $('.nav-item a').css('color','white');
+
+        }
+
+
+        if(scrollNow >= 67){
+
+          $(".item_wrap").css('opacity',"1");
+        }
+
+        else{
+          $(".item_wrap").css('opacity',"0.9");
+        }
+
+   })
+
+
+
+    </script>
+</body>
+</html>

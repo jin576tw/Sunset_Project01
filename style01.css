@@ -1,0 +1,683 @@
+*{
+    /* outline: 1px solid;  */
+}
+body,html{
+    font-family: '華康新特明體','Crimson Text';
+    margin: 0;
+    padding: 0;
+    background-color:  #FFE6D3;
+}
+
+.navbar-brand img{
+    width: 100px;
+}
+.navbar{
+    
+    /* background-color: transparent; */
+    transition: 0.5s;
+}
+
+.nav-item {
+    padding: 0 px;
+}
+
+.nav-item a:hover{
+    color: #D83593;
+}
+
+/* .collapse{
+    background-color: #FCF3EC;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #1682AA;
+    
+} */
+
+
+#INTRO{
+    overflow: hidden;
+}
+.title_wrap{
+    margin: 0 auto;
+}
+
+
+.title_wrap h1{ 
+    /* position: absolute; */
+    color: #F2A66D;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+    transition: 0.8s;
+}
+
+
+.title_wrap h1:hover{
+    color:#D83593;
+}
+
+
+
+.warp01{
+    transition: 2s;
+    display: flex;
+    margin-top: 170px;
+    width: 100%;
+    opacity: 1;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+.moutain_left{ 
+    transition: 5s;
+    width: 500px; 
+   
+}
+
+.moutain_left img{
+    width: 100%;
+}
+.Sun01{
+    position: relative;
+    top: 25px;
+    width: 500px;
+    transition: 5s;
+}
+.Sun01 img{
+    width: 100%;
+}
+
+.mountain_right{
+
+    transition: 5s;
+    width: 500px;
+   
+}
+.mountain_right img{
+    
+    width: 100%;
+}
+
+
+
+
+
+
+.section_2{
+    z-index: 3;
+    background-size: cover;   
+    background-image: url('./網站素材/1x/SECTION\ 2\ BG.png');
+    overflow: hidden;
+    height: 880px;
+}
+
+
+.head_wrap{
+    transition: 2s;
+    opacity: 0;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+.SUN_small{
+    transition: 1s;
+}
+.head_wrap h2{
+    color: #1D9DCC;
+    position: relative;
+    top:-80px;
+}
+
+.head_wrap h2{
+   font-size: 40px;
+    
+    
+}
+.head_wrap a{
+    font-size: 10px;
+    color: #F4BD94;
+    position: relative;
+    bottom: 90px;
+    text-decoration: none;
+    transition: 0.8s;
+    
+    
+}
+
+.head_wrap a:hover{
+
+    color: #D83593;;
+
+}
+
+.perfume_wrap{
+
+    z-index: 5;
+    position: relative;
+     width: 400px;
+     top: -50px;
+     margin: 0 auto;
+
+}
+
+.perfume_wrap img{
+    width: 100%;
+}
+
+.bottle{
+    opacity: 0;
+    position: relative;
+    top:-440px;
+    transition: 0.8s;
+    
+}
+
+.Sun_perfume01{
+    opacity: 0;
+    transition: 0.8s;
+    z-index: 0;
+    position: relative;
+    
+}
+
+.wave_warp{
+    z-index: 4;
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    top:-600px;
+    
+    
+}
+.wave_warp img{
+    width: 100%;
+}
+
+.wav_small{
+    position: relative;
+    margin: 0 auto;
+    width: 350px;
+    top: -140px;
+}
+/* 
+.wav_big img{
+    transition: 1s;
+
+}
+
+.wav_small img{
+    transition: 1s;
+
+} */
+
+.perfume_shadow_warp{
+    margin: -800px auto;
+    width: 400px;
+}
+
+.perfume_shadow_warp img{
+    width: 100%;
+}
+
+.bottle_reflection{
+    opacity: 0;
+    z-index: 1;
+}
+.Sun_reflection{
+    opacity: 0;
+    transition: 0.8s; 
+    z-index: 2;
+    margin-top: -460px;
+}
+
+
+ 
+.section_3{
+    overflow: hidden;
+    height: 800px;
+    background-size: cover;   
+    background-image: url('./網站素材/1x/SECTION_3.png');
+}
+
+
+.More_warp{
+    margin-top: 100px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+
+
+
+.sun03{
+    opacity: 0;
+    transition: 0.2s;
+    overflow: hidden;
+    z-index: 6;
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    background-image: url("./網站素材/SVG/SUN_Landingpage_3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content_warp{
+    opacity: 0;
+    z-index: 6;
+    transition: 1s;
+}
+
+.content_warp a{
+    float: right;
+    color: #F4BD94;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.content_warp a:hover{
+    color:#D83593;
+    
+}
+.perfume_shadow{
+    width: 200px;
+    margin-top: 100px; 
+    margin-left: 200px; 
+    
+    transition: 2s;
+    animation: float 10s infinite
+}
+
+
+@keyframes float{
+
+    0%{
+        transform: rotate(20deg);
+    }
+
+    50%{
+        transform: rotate(55deg);
+    }
+
+    100%{
+        transform: rotate(20deg);
+
+    }
+
+}
+
+.hand{
+   
+     
+    width: 350px; 
+    margin-top: 30px;
+    margin-left: 320px; 
+    transition: 2s;
+}
+
+
+
+@keyframes wavv{
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translateX(-1000px);
+        
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+.wave img{
+    float: left;
+    position: relative;
+    bottom: 600px;
+    width: 6140px;
+    height: 700px;
+
+    animation: wavv 50s infinite;
+}
+
+
+.section_4{
+    overflow: hidden;
+}
+
+
+.sun04{
+    /* position: relative; */
+    transform: translateY(-80px);
+    /* opacity: 0; */
+    transition: 2s;
+    margin-top: 20px;
+    margin-left: 1200px; 
+    width: 200px;
+    height: 200px;
+  
+    
+}
+
+.categeory_warp{
+    transition: 2s;
+    width: 800px;
+
+}
+
+.box{
+    transition: 0.2s;
+    opacity: 0.9;;
+    padding: 50px;
+    height: 200px;
+    background-color: #012E3E;
+    border:  #F4BD94 solid 5px;
+    border-radius: 10px;
+   text-align: center;
+} 
+
+.box:hover{
+    opacity: 2;
+
+}
+
+.box a{
+    opacity: 0.9;
+    color: white;
+    text-decoration: none;
+
+}
+.box img{
+    opacity: 1;
+    position: relative;
+    top: -15px;
+}
+
+
+
+
+.wrap_04{
+    margin-top: -150px;
+}
+
+.mountain_bottom{
+    width: 100%;
+}
+
+
+.footer{
+    height: 80px;
+    background-color: #012E3E;
+}
+
+.footer p{
+    
+    font-size: 10px;
+    color:white;
+    text-align: center;
+}
+
+@media screen and (min-width:375px) and (max-width:768px){
+
+    .sun03{
+        opacity: 0;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 6;
+        width: 300px;
+        height:300px;
+        border-radius: 100%;
+        background-image: url("./網站素材/SVG/SUN_Landingpage_3.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section_3{
+        overflow: hidden;
+        height:800px;
+        background-size: cover;   
+        background-image: url('./網站素材/1x/SECTION_3.png');
+    }
+    
+    .More_warp{
+        flex-direction: column;
+    }
+    .perfume_shadow{
+        width: 90px;
+        margin-top: 50px; 
+        margin-left: 100px; 
+        
+        transition: 2s;
+        animation: float 10s infinite
+    }
+
+    .hand{
+        transform: translateX(100px);
+         
+        width: 200px; 
+        margin-top: 0px;
+        margin-left: 200px; 
+        transition: 2s;
+    }
+    
+    .wave img{
+        float: left;
+        position: relative;
+        bottom: 300px;
+        width: 6140px;
+        height: 700px;
+    
+        animation: wavv 50s infinite;
+    }
+    
+    
+    .content_warp{
+        margin-top:80px;
+    }
+
+    .box img{
+        width: 70px;
+    }
+    
+
+
+}
+
+@media screen and (max-width:375px) {
+
+
+
+  .navbar{
+     max-width: 375px;
+  }
+
+  .section_1{
+      overflow: hidden;
+  }
+
+  
+  .title_wrap h1{
+    font-size: 30px;
+      
+  }
+
+
+  .warp01{
+    margin-top: 290px;
+    
+}
+
+  .moutain_left{ 
+     z-index: 2;
+     position: absolute;
+      transition: 5s;
+   
+   }
+
+    .moutain_left img{
+        width: 180px;
+    }
+    .Sun01{
+       margin-left: 40px;
+       z-index: 0;
+       transition: 5s;
+       
+    }
+    .Sun01 img{
+        position: absolute;
+        width: 300px;
+
+        
+        bottom: 50px;
+        
+        
+    }
+
+    .mountain_right{
+        z-index: 2;
+        transition: 5s;
+      
+    
+    }
+    .mountain_right img{
+        
+        width: 180px;
+    }
+    
+    .section_2{
+       height: 800px;
+
+    }
+
+    .wave_warp{
+        z-index: 4;
+        position: relative;
+        margin: 0 auto;
+        width: 500px;
+        top:-600px;
+        right: 60px;
+        
+    }
+
+    .section_3{
+        overflow: hidden;
+        height: 800px;
+        background-size: cover;   
+        background-image: url('./網站素材/1x/SECTION_3.png');
+    }
+
+    .sun03{
+        opacity: 0;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 6;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-image: url("./網站素材/SVG/SUN_Landingpage_3.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    .perfume_shadow{
+        width: 90px;
+        margin-top: 50px; 
+        margin-left: 100px; 
+        
+        transition: 2s;
+        animation: float 10s infinite
+    }
+
+    .hand{
+    
+         
+        width: 200px; 
+        margin-top: 0px;
+        margin-left: 200px;
+        transition: 2s;
+    }
+    
+    .More_warp{
+        margin-top: 100px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+        
+    }
+
+    .content_warp{
+        opacity: 0;
+        z-index: 6;
+        transition: 1s;
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .wave img{
+        float: left;
+        position: relative;
+        bottom: 500px;
+        width: 6140px;
+        height: 700px;
+    
+        animation: wavv 50s infinite;
+    }
+
+    .categeory_warp{
+      position: relative;
+      top: 50px;
+      width: 300px;
+    }
+
+    .wrap_04{
+        margin-top: 100px;
+    }
+
+   .box a{
+    opacity: 0.9;
+    color: white;
+    text-decoration: none;
+
+}
+   .box img{
+    
+    opacity: 0.9;
+    position: relative;
+    width: 50px;
+    margin-top: 10px;
+    /* top: -15px; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
