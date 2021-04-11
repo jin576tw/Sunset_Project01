@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar_Test</title>
+    <link rel="stylesheet" href="./navbar_css.css">
+    <style>
+       .hidebar{
+          height: 200px;
+       }
+        
+    </style>
+</head>
+<body>
+   <div class="navbar_warp ">
+    <div class="navbar">
+        <a class="navbar-brand" href="#INTRO">
+            <img src="./網站素材/1x/logo.png" alt="">
+        </a>
+        
+        <ul class="navbar-nav">
+            <li class="nav_item">
+                <a class="nav-link" href="">夕日Sunset</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav-link" href="">探索商場</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav-link" href="">香調分類</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav-link" href="">購物車</a>
+            </li>   
+        </ul>
+      
+
+        <button class="navbar-toggler" id="toggler">
+            <img src="./網站素材/1x/Hamburger.png" alt="">
+        </button>
+    </div>
+    <div class="collapse">
+        <ul class="collapse-navbar">
+            <li class="collapse_item">
+                <a class="collapse-link" href="">夕日Sunset</a>
+            </li>
+            <li class="collapse_item">
+                <a class="collapse-link" href="">探索商場</a>
+            </li>
+            <li class="collapse_item">
+                <a class="collapse-link" href="">香調分類</a>
+            </li>
+            <li class="collapse_item">
+                <a class="collapse-link" href="">購物車</a>
+            </li>   
+        </ul>
+      </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+
+
+    
+
+
+    // navbarRWD功能
+    $('.navbar-toggler').click(function(e){
+        console.log('.navbar-toggler');
+        
+        $('.collapse').toggleClass('hidebar');
+        
+
+    })
+</script>
+    
+</body>
+</html>

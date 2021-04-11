@@ -1,0 +1,168 @@
+*{
+    /* outline: solid 1px black; */
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color:  #FFE6D3;
+    height: 10000px;
+}
+
+.navbar_warp{
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    position:relative;
+    z-index: 999;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color:  #FFE6D3;
+    /* background-color:  transparent; */
+}
+
+.navbar-brand{
+    width: 100px;
+}
+.navbar-brand img{
+    width: 100%;
+}
+
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 7%;
+    
+}
+.navbar-nav a{ 
+   text-decoration: none;
+   color: #484848 ;
+   font-size: 14px;
+    
+}
+.nav-link{
+    margin-right: 20px;
+}
+
+.navbar-toggler{
+    display: none
+}
+
+
+.collapse{
+   display: none;
+ 
+}
+
+
+
+@media screen and (min-width:375px) and (max-width:768px){
+
+    .navbar-toggler{
+        display: flex;
+        background-color: transparent;
+        border: solid 1px transparent;
+        justify-content: flex-end;
+ 
+    }
+
+
+    .navbar-nav{
+        display: none;
+    }
+
+
+    .collapse{
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        z-index: -99;
+        background-color:#1682AA;
+        opacity: 0.9;
+        transition: 1s;
+        
+      
+     }
+     .collapse-navbar{
+        text-align: center;
+        list-style: none;
+        margin-right: 30px;
+    
+        
+    }
+    
+    .collapse-navbar a{
+        opacity: 1;
+        text-decoration: none;
+        color:  #FFff;
+    }
+    
+    .collapse_item{
+        padding: 10px 0;
+    }
+
+
+
+}
+
+
+@media (max-width:375px) {
+
+
+    .navbar-toggler{
+        display: flex;
+        background-color: transparent;
+        border: solid 1px transparent;
+        justify-content: flex-end;
+ 
+    }
+
+
+    .navbar-nav{
+        display: none;
+    }
+
+
+    .collapse{
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        z-index: -99;
+        background-color:#1682AA;
+        opacity: 0.9;
+        transition: 1s;
+        
+      
+     }
+
+
+     .collapse-navbar{
+        text-align: center;
+        list-style: none;
+        margin-right: 30px;
+    
+        
+    }
+    
+    .collapse-navbar a{
+        opacity: 1;
+        text-decoration: none;
+        color:  #FFff;
+    }
+    
+    .collapse_item{
+        padding: 10px 0;
+    }
+
+}
